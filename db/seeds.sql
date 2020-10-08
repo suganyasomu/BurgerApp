@@ -1,1 +1,3 @@
-INSERT INTO burgers (burger_name,devoured) VALUES('chicken',true),('veg',false),('steak',true);
+USE burgers_db;
+
+INSERT INTO burgers (burger_name) VALUES('chicken'),('veg'),('steak');
