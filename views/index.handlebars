@@ -1,8 +1,13 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container-fluid">
+<img src="/assets/img/burger.png">
+<h2>Eat-Da-Burger!</h2>
 
-<h2>Burgers that are not devoured!</h2>
 
-<ul>
+<div class="row">
+
+  <div class="col">
+    <h2>Not devoured!</h2>
+<ol>
   {{#each burgers}}
   {{#unless devoured}}
   <li>
@@ -10,11 +15,12 @@
   </li>
   {{/unless}}
   {{/each}}
-</ul>
+</ol>
+</div>
+<div class="col">
+<h2>Are devoured!</h2>
 
-<h2>Burgers that are devoured!</h2>
-
-<ul>
+<ol>
   {{#each burgers}}
   {{#if devoured}}
   <li>
@@ -22,7 +28,14 @@
   </li>
   {{/if}}
   {{/each}}
-</ul>
-
-<textarea  id="textInput" cols="30" rows="10"></textarea>
-<button id="submit" type="submit">submit</button>
+</ol>
+</div>
+</div>
+<form class="text-center create-burger">
+<textarea  id="textInput"></textarea>
+<br>
+<button id="submit" class="btn btn-sm btn-primary" type="submit">submit</button>
+</form>
+<br>
+<p class="text-center">Enter a burger you want to eat and then click "Submit."</p>
+</div>
